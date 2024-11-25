@@ -63,6 +63,7 @@ function deleteBookmark(index) {
   tableContent.innerHTML = "";
   bookmarks.forEach((_, idx) => displayBookmark(idx));
   localStorage.setItem("bookmarksList", JSON.stringify(bookmarks));
+  console.log(bookmarks);
 }
 
 function visitWebsite(index) {
